@@ -3,3 +3,5 @@ Other ".py" files are games code
 there are image of user interface and games screen
 
 most of controls are with up and down keys , w s keys , mouse 
+
+on some games controls are mentioned
