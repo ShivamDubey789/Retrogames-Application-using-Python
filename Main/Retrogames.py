@@ -8,12 +8,12 @@ import pygame
 pygame.init()
 current_directory = os.path.dirname(__file__)
 
-snakegame = os.path.join(current_directory,'snakegames.exe')
-tetrisgame = os.path.join(current_directory,'tetris.exe')
-ponggame = os.path.join(current_directory,'pong game.exe')
-spaceinvadergame = os.path.join(current_directory,'sinvader.exe')
-flappybirdgame = os.path.join(current_directory,"flappybird.exe")
-dinorungame = os.path.join(current_directory,"dinorun.exe")
+snakegame = os.path.join(current_directory,'Assets\snakegames.exe')
+tetrisgame = os.path.join(current_directory,'Assets/tetris.exe')
+ponggame = os.path.join(current_directory,'Assets/pong game.exe')
+spaceinvadergame = os.path.join(current_directory,'Assets/sinvader.exe')
+flappybirdgame = os.path.join(current_directory,"Assets/flappybird.exe")
+dinorungame = os.path.join(current_directory,"Assets/dinorun.exe")
 
 snake_process = None  # Global variable to keep track of the snake game process
 pong_process = None
@@ -78,7 +78,7 @@ root.title("The Retro Games")
 root.geometry("800x600")
 root.resizable(0,0)
 
-icon_path = os.path.join(current_directory, "retrogame.ico")
+icon_path = os.path.join(current_directory, "Assets/retrogame.ico")
 root.iconbitmap(icon_path)
 
 
@@ -104,12 +104,12 @@ frame4.grid(row = 3 , column=1 , padx=0 ,pady =10 )
 frame5 = customtkinter.CTkFrame(master = root , border_width= 0)
 frame5.grid(row = 3 , column=2 , padx=0 ,pady =10 )
 
-snake_image_path = os.path.join(current_directory,'snakelogo.jpg')
-pong_image_path = os.path.join(current_directory,'pongcover.jpg')
-tetris_image_path = os.path.join(current_directory,'tetris cover.jpg')
-dinorun_image_path = os.path.join(current_directory,'dino run cover.jpg')
-sinvader_image_path = os.path.join(current_directory,'spaceinvaders.jpg')
-flappybird_image_path = os.path.join(current_directory,'flappy bird cover.jpg')
+snake_image_path = os.path.join(current_directory,'Assets/snakelogo.jpg')
+pong_image_path = os.path.join(current_directory,'Assets/pongcover.jpg')
+tetris_image_path = os.path.join(current_directory,'Assets/tetris cover.jpg')
+dinorun_image_path = os.path.join(current_directory,'Assets/dino run cover.jpg')
+sinvader_image_path = os.path.join(current_directory,'Assets/spaceinvaders.jpg')
+flappybird_image_path = os.path.join(current_directory,'Assets/flappy bird cover.jpg')
 
 snake_image = customtkinter.CTkImage(Image.open(snake_image_path),size = (150,200) )
 pong_image = customtkinter.CTkImage(Image.open(pong_image_path),size = (150,200))
