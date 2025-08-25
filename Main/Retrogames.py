@@ -8,7 +8,7 @@ import pygame
 pygame.init()
 current_directory = os.path.dirname(__file__)
 
-snakegame = os.path.join(current_directory,'Assets\snakegames.exe')
+snakegame = os.path.join(current_directory,'Assets/snakegames.exe')
 tetrisgame = os.path.join(current_directory,'Assets/tetris.exe')
 ponggame = os.path.join(current_directory,'Assets/pong game.exe')
 spaceinvadergame = os.path.join(current_directory,'Assets/sinvader.exe')
